@@ -220,27 +220,9 @@
     </style>
 
     <script>
+        function scrollToTop() {
+            window.scrollTo(0, 0);
+        }
+
         function nextQuestion(questionNumber) {
-            document.getElementById('question' + (questionNumber - 1)).style.display = "none";
-            document.getElementById('question' + questionNumber).style.display = "block";
-        }
-
-        function wrongAnswer(button) {
-            alert("Sbagliato! Riprova!");
-            button.classList.remove('correct');
-        }
-
-        function correctAnswer(button) {
-            button.classList.add('correct');
-            setTimeout(function() {
-                nextQuestion(2);
-            }, 500);
-        }
-
-        function showResult() {
-            document.getElementById('question4').style.display = "none";
-            document.getElementById('result').style.display = "block";
-        }
-    </script>
-</body>
-</html>
+            document.getElement
