@@ -221,9 +221,15 @@
 
     <script>
         function nextQuestion(questionNumber) {
-            document.getElementById('question' + (questionNumber - 1)).style.display = "none";
-            document.getElementById('question' + questionNumber).style.display = "block";
-        }
+    // Nascondi la domanda attuale
+    document.getElementById('question' + (questionNumber - 1)).style.display = "none";
+    
+    // Mostra la prossima domanda
+    document.getElementById('question' + questionNumber).style.display = "block";
+    
+    // Scorri in cima alla pagina
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
         function wrongAnswer(button) {
             alert("Sbagliato! Riprova!");
