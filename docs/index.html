@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indovina il tuo Regalo!</title>
+    <title>Adivina cual es tu Regalo!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -99,58 +99,58 @@
     </style>
 </head>
 <body>
-    <h1>Indovina il tuo Regalo di Natale!</h1>
-    <p>Rispondi alle domande per scoprire la sorpresa!</p>
+    <h1>Adivina cual es tu regalo!</h1>
+    <p>Contesta a las preguntas para descubrir cual es el regalo!</p>
 
     <!-- Domanda 1 -->
     <div class="question" id="question1">
-        <h2>1. Secondo te, che regalo ti ho fatto?</h2>
+        <h2>1. Segun vos, que regalo te hice?</h2>
         <div class="options">
             <div class="option">
-                <img src="viaggio.png" alt="Viaggio">
-                <button onclick="correctAnswer(this)">Un viaggio</button>
-            </div>
-            <div class="option">
                 <img src="orologio.png" alt="Orologio">
-                <button onclick="wrongAnswer(this)">Un orologio</button>
+                <button onclick="wrongAnswer(this)">Un reloj</button>
+            </div>
+             <div class="option">
+                <img src="viaggio.png" alt="Viaggio">
+                <button onclick="correctAnswer(this)">Un viaje</button>
             </div>
             <div class="option">
                 <img src="cucina.png" alt="Corso di cucina">
-                <button onclick="wrongAnswer(this)">Un corso di cucina</button>
+                <button onclick="wrongAnswer(this)">Un curso de cocina</button>
             </div>
             <div class="option">
                 <img src="gym.png" alt="Abbonamento in palestra">
-                <button onclick="wrongAnswer(this)">Un abbonamento in palestra</button>
+                <button onclick="wrongAnswer(this)">Una suscripción al gimnasio</button>
             </div>
         </div>
     </div>
 
     <!-- Domanda 2 -->
     <div class="question" id="question2" style="display: none;">
-        <h2>2. Cosa vedremo in questo viaggio?</h2>
+        <h2>2. Que vamos a ver en este viaje?</h2>
         <div class="options">
             <div class="option">
                 <img src="castello.png" alt="Castello medievale">
-                <button onclick="nextQuestion(3)">Un castello medievale</button>
+                <button onclick="nextQuestion(3)">Un castillo medieval</button>
             </div>
             <div class="option">
                 <img src="skyline.png" alt="Skyline moderno">
-                <button onclick="nextQuestion(3)">Un grande skyline moderno</button>
+                <button onclick="nextQuestion(3)">Uno skyline moderno</button>
             </div>
             <div class="option">
                 <img src="neve.png" alt="Montagne">
-                <button onclick="wrongAnswer(this)">Montagne con la neve</button>
+                <button onclick="wrongAnswer(this)">montañas y nieve</button>
             </div>
             <div class="option">
                 <img src="mare.png" alt="Mare">
-                <button onclick="wrongAnswer(this)">Il mare</button>
+                <button onclick="wrongAnswer(this)">El mar</button>
             </div>
         </div>
     </div>
 
     <!-- Domanda 3 -->
     <div class="question" id="question3" style="display: none;">
-        <h2>3. Indovina un piatto tipico della destinazione!</h2>
+        <h2>3. Adivina un plato tipico del destino!</h2>
         <div class="options">
             <div class="option">
                 <img src="gulasch.png" alt="Gulasch">
@@ -173,23 +173,23 @@
 
     <!-- Domanda 4 -->
     <div class="question" id="question4" style="display: none;">
-        <h2>4. Indovina la data del viaggio</h2>
+        <h2>4. Adivina la fecha del viaje</h2>
         <div class="options">
             <div class="option">
-                <img src="gennaio.png" alt="24-26 Gennaio">
-                <button onclick="wrongAnswer(this)">24-26 Gennaio</button>
+                <img src="gennaio.png" alt="24-26 Enero">
+                <button onclick="wrongAnswer(this)">24-26 Enero</button>
             </div>
             <div class="option">
                 <img src="febbraio.png" alt="14-16 Febbraio">
-                <button onclick="showResult()">14-16 Febbraio</button>
+                <button onclick="showResult()">14-16 Febrero</button>
             </div>
             <div class="option">
-                <img src="marzo.png" alt="7-9 Febbraio">
+                <img src="marzo.png" alt="7-9 Marzo">
                 <button onclick="wrongAnswer(this)">7-9 Marzo</button>
             </div>
             <div class="option">
-                <img src="aprile.png" alt="27-29 Dicembre">
-                <button onclick="wrongAnswer(this)">3-5 Aprile</button>
+                <img src="aprile.png" alt="3-5 Abril">
+                <button onclick="wrongAnswer(this)">3-5 Abril</button>
             </div>
         </div>
     </div>
@@ -197,9 +197,9 @@
     <!-- Risultato -->
     <div id="result">
         <div class="result-box">
-            <h2>La destinazione è...</h2>
+            <h2>El destino es...</h2>
             <h1>Varsavia!</h1>
-            <p>Preparati per il viaggio e Buon Natale! Ah dimenticavo... partiamo da Bergamo ahahah</p>
+            <p>Prepárate para el viaje y feliz cumpleaños amorino! Ah se me olvidaba... partimos desde Bérgamo ahahah</p>
         </div>
         <img src="varsavia.png" alt="Varsavia">
     </div>
