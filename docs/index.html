@@ -248,9 +248,12 @@
         }
 
         function showResult() {
-            document.getElementById('question4').style.display = "none";
-            document.getElementById('result').style.display = "block";
-        }
+    document.getElementById('question4').style.display = "none";
+    document.getElementById('result').style.display = "block";
+    
+    // Scrolla in cima alla pagina quando si arriva al risultato
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
     </script>
 </body>
 </html>
